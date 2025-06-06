@@ -11,6 +11,6 @@ void kernel_main(void) {
 	// printf("5\n");
 	// printf("6\n");
 
-	int val = 3;
+	int val = 3223;
 	printf("%d\n", val);
 }

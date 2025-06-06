@@ -71,7 +71,7 @@ int printf(const char* restrict format, ...) {
 				num /= 10;
 			}
 
-			int counter = 0;
+			int counter = numDigits-1;
 			num = numCopy;
 			char digitStr[numDigits];
 
@@ -111,6 +111,7 @@ int printf(const char* restrict format, ...) {
 						break;
 				}
 				digitStr[counter] = (char)ascii;
+				counter--;
 				num /= 10;
 			}
 
